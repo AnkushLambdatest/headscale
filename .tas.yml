@@ -3,6 +3,7 @@ version: 1.2.0
 preRun:
   command:
     - "go get -d ./..."
+    - "go get modernc.org/sqlite@latest"
     - "go mod vendor"
 
 postMerge:
