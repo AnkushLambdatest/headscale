@@ -1,0 +1,11 @@
+framework: golang
+version: 1.2.0
+preRun:
+  command:
+    - "go get -d ./..."
+    - "go mod vendor"
+
+postMerge:
+  pattern:
+    # glob-patterns to discover tests to run in case of postMerge
+    - ""
